@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Device Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let info of infos">
+      <ion-icon name="chevron-forward-circle-outline" slot="start"></ion-icon>
+      <ion-label>{{info.name}}</ion-label>
+      <p>{{info.val}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
